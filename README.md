@@ -13,7 +13,7 @@ Use code coverage to find untested code and a problem with the tests.
 
 2. Run the tests using code coverage, then generate an html coverage report:
    ```bash
-   coverage run -u unittest triangle_test.py
+   coverage run -m unittest triangle_test.py
    coverage html
    ```
 
@@ -32,11 +32,11 @@ Use code coverage to find untested code and a problem with the tests.
    ```
 
 7. What lines in the **unit test code** were not executed?     
-   Write the Line Numbers: [-]
+   Write the Line Numbers: [25, 29, 33, 37]
 
 8. Normally, **all** the lines of test code should be executed.  When some part of test code is not executed it may indicate a problem with the tests.  Explain the problem in the unit test code. (write you answer below).
 
-   Answer: My test doesn't show missing.
+   Answer: Because the assert run the test and get the error. after that assert will not run.
 
 
 
